@@ -1,0 +1,19 @@
+1,Gabriel García Márquez,Colombiano,1927-03-06,Fue un escritor, periodista y activista político colombiano, ganador del Premio Nobel de Literatura en 1982.
+2,Mario Vargas Llosa,Peruano,1936-03-28,Es un escritor, periodista y político peruano, ganador del Premio Nobel de Literatura en 2010.
+3,José Martí,Cubano,1853-01-28,Fue un escritor, periodista y político cubano, considerado uno de los más importantes de la historia de América Latina.
+4,Juan Rulfo,Mexicano,1917-05-16,Fue un escritor mexicano, considerado uno de los más importantes de la literatura mexicana del siglo XX.
+5,Pablo Neruda,Chileno,1904-07-12,Fue un poeta y político chileno, ganador del Premio Nobel de Literatura en 1971.
+6,Jorge Luis Borges,Argentino,1899-08-24,Fue un escritor y poeta argentino, considerado uno de los más importantes de la literatura argentina del siglo XX.
+7,Cesar Vallejo,Peruano,1994-06-14,Era muy buenoo8,jose,jose,2024-10-15,jose
+8,jen,jen ,2024-10-17,jen
+9,Pablito pepinillo,Peruano,1995-07-13,Muy amable 
+10,Zanahoria,Zanahoria,2024-11-18,txtBiografia
+11,Pinocho,Peruana,2024-01-09,txtBiografia
+12,jen,xd,1990-02-06,txtBiografia
+13,FER,adadad,2024-06-12,adadaddad
+14,txtNombre,txtNacionalidad,2024-11-18,txtBiografia
+15,s,txtNacionalidad,2024-11-18,txtBiografia
+16,aaaaaaa,aaaaaaa,2024-11-18,aaaaaaaaaaa
+17,eeeeeee,eeeeeee,2024-11-18,eee
+18,ccccccccc,ccccc,2024-11-18,cccccc
+19,dddddddd,ddddddd,2000-02-08,ddddddddddd

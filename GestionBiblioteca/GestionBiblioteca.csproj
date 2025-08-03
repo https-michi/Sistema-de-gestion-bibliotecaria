@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1006312-1013-4F2F-94F6-DCC461EA5357}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GestionBiblioteca</RootNamespace>
+    <AssemblyName>GestionBiblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\https_michi.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomStyles\ButtonDesign.cs" />
+    <Compile Include="CustomStyles\DataGridDesign.cs" />
+    <Compile Include="CustomStyles\FormDesign.cs" />
+    <Compile Include="CustomStyles\LabelDesign.cs" />
+    <Compile Include="CustomStyles\PanelDesign.cs" />
+    <Compile Include="CustomStyles\TextBoxDesign.cs" />
+    <Compile Include="Estructuras\Colas\ColaSolicitud.cs" />
+    <Compile Include="Estructuras\Colas\NodoSolicitud.cs" />
+    <Compile Include="Estructuras\Listas\Autores\ListaAutores.cs" />
+    <Compile Include="Estructuras\Listas\Autores\NodoAutor.cs" />
+    <Compile Include="Estructuras\Listas\Categorias\ListaCategorias.cs" />
+    <Compile Include="Estructuras\Listas\Categorias\NodoCategoria.cs" />
+    <Compile Include="Estructuras\Listas\Libros\ListaLibros.cs" />
+    <Compile Include="Estructuras\Listas\Libros\NodoLibro.cs" />
+    <Compile Include="Estructuras\Listas\Usuarios\ListaUsuarios.cs" />
+    <Compile Include="Estructuras\Listas\Usuarios\ListaUsuariosNegocio.cs" />
+    <Compile Include="Estructuras\Listas\Usuarios\NodoUsuario.cs" />
+    <Compile Include="Estructuras\Listas\Usuarios\NodoUsuarioNegocio.cs" />
+    <Compile Include="Estructuras\Pilas\Prestamo\NodoPrestamo.cs" />
+    <Compile Include="Estructuras\Pilas\Prestamo\PilaPrestamos.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionLibro.Designer.cs">
+      <DependentUpon>GestionLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionPrestamos.Designer.cs">
+      <DependentUpon>GestionPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Modales\AgregarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Modales\AgregarAutor.Designer.cs">
+      <DependentUpon>AgregarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Modales\AgregarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Modales\AgregarCategoria.Designer.cs">
+      <DependentUpon>AgregarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionUsuarioNegocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionUsuarioNegocio.Designer.cs">
+      <DependentUpon>GestionUsuarioNegocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionSolicitudes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionSolicitudes.Designer.cs">
+      <DependentUpon>GestionSolicitudes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Autor.cs" />
+    <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Libro.cs" />
+    <Compile Include="Models\Prestamo.cs" />
+    <Compile Include="Models\Solicitud.cs" />
+    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios\ApiClient.cs" />
+    <Compile Include="Servicios\AutorService.cs" />
+    <Compile Include="Servicios\CategoriaService.cs" />
+    <Compile Include="Servicios\LibroService.cs" />
+    <Compile Include="Servicios\PrestamoService.cs" />
+    <Compile Include="Servicios\SolicitudService.cs" />
+    <Compile Include="Servicios\UsuarioNegocioService.cs" />
+    <Compile Include="Servicios\UsuarioService.cs" />
+    <Compile Include="Validaciones\IFormularioConPanel.cs" />
+    <Compile Include="Validaciones\MensajesValidacionGestionUsuario.cs" />
+    <Compile Include="Validaciones\MensajesValidacionLogin.cs" />
+    <Compile Include="Validaciones\MensajesValidacionRegistro.cs" />
+    <EmbeddedResource Include="Forms\GestionLibro.resx">
+      <DependentUpon>GestionLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionPrestamos.resx">
+      <DependentUpon>GestionPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionSolicitudes.resx">
+      <DependentUpon>GestionSolicitudes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionUsuarioNegocio.resx">
+      <DependentUpon>GestionUsuarioNegocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Modales\AgregarAutor.resx">
+      <DependentUpon>AgregarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Modales\AgregarCategoria.resx">
+      <DependentUpon>AgregarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="apiConfig.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="Resources\https_michi.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IconoBiblio.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\jennnnn.JPG" />
+    <None Include="Resources\jennn.JPG" />
+    <None Include="Resources\jennnn.JPG" />
+    <None Include="Resources\xdowowaa.JPG" />
+    <None Include="Resources\Eliminar2.png" />
+    <None Include="Resources\Editar2.png" />
+    <None Include="Resources\Agregar2.png" />
+    <None Include="Resources\Prestamoo.png" />
+    <None Include="Resources\Volver.png" />
+    <None Include="Resources\VerContrasena.png" />
+    <None Include="Resources\VisibleContra01.png" />
+    <None Include="Resources\VisibleContra.png" />
+    <None Include="Resources\maximizar.png" />
+    <None Include="Resources\cerrar.png" />
+    <None Include="Resources\expandir.png" />
+    <None Include="Resources\minimizar.png" />
+    <None Include="Resources\457807474_847370420830069_13603147541658460_n.jpg" />
+    <None Include="Resources\Hamburguesa.png" />
+    <None Include="Resources\Salir.png" />
+    <None Include="Resources\Libro.png" />
+    <None Include="Resources\Usuario.png" />
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

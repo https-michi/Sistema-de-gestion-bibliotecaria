@@ -1,0 +1,5 @@
+1,aaaaaaaaaaa,ss,ss,ss,2024-11-18,sss,sss,False,2024-11-18 16:05:29,19,5
+3,bbbbbbbbbbbb,eeeeeeeeeeeeeee,eeeeeeeeeeeeee,eeeeeee,2024-11-18,ee,eee,False,2024-11-18 16:08:25,9,4
+4,ccccccccccc,asasas,asasasasa,asasasa,2024-11-18,asasasas,asasasasasas,False,2024-11-18 16:18:18,9,5
+5,ddddddddddd,ddddddddddddddddddd,dddddddddddddddddd,ddddddddddddddddddd,2024-11-18,ddddddddd,ddddddddddddddd,True,2024-11-18 21:44:17,13,6
+6,eeeeeeeeeee,aaaaaaa,aaa,ss,2024-11-19,sss,sss,True,2024-11-19 22:39:28,9,10

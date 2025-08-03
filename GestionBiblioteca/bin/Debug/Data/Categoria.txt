@@ -1,0 +1,15 @@
+1,Ficción,Una categoría que incluye obras de ficción literaria que narran historias inventadas.
+2,No Ficción,Una categoría que abarca obras basadas en hechos reales y análisis de la realidad.
+3,Poesía,Una categoría que incluye obras poéticas que expresan sentimientos y emociones a través de versos.
+4,Ciencia Ficción,Una categoría que explora conceptos futuristas y tecnológicos en contextos imaginativos.
+5,Fantasía,Una categoría que incluye obras que presentan mundos mágicos y seres sobrenaturales.
+6,Misterio,Una categoría que abarca obras que involucran tramas de suspenso y resolución de crímenes.
+7,Romance,Una categoría que incluye historias centradas en relaciones amorosas y emocionales.
+8,Drama,Una categoría que incluye obras que abordan conflictos humanos y situaciones serias.9,terrorx2,txtDescripcion
+9,Utopia,nose nose nose 
+10,Papalla con leche ,Xd
+11,Ficcion Belica,Nose
+12,NOSE,txtDescripcion
+13,aaaaaaaaaaaaaaa,aaaaaaaaaaaaaaa
+14,aaaaaaa,aaaaaaaa
+15,sssssss,sssssss
